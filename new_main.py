@@ -7,11 +7,11 @@ import matplotlib.pyplot as plt
 # Load models
 @st.cache_resource
 def load_models():
-    plant_model = tf.keras.models.load_model("models/plant_id_model.h5", compile=False)
-    banana_model = tf.keras.models.load_model("models/Banana_model.h5", compile=False)
-    potato_model = tf.keras.models.load_model("models/Potato_model.h5", compile=False)
-    rice_model = tf.keras.models.load_model("models/Rice_model.h5", compile=False)
-    tomato_model = tf.keras.models.load_model("models/Tomato_model.h5", compile=False)
+    plant_model = tf.keras.models.load_model("plant_id_model.h5", compile=False)
+    banana_model = tf.keras.models.load_model("Banana_model.h5", compile=False)
+    potato_model = tf.keras.models.load_model("Potato_model.h5", compile=False)
+    rice_model = tf.keras.models.load_model("Rice_model.h5", compile=False)
+    tomato_model = tf.keras.models.load_model("Tomato_model.h5", compile=False)
     return plant_model, banana_model, potato_model, rice_model, tomato_model
 
 plant_model, banana_model, potato_model, rice_model, tomato_model = load_models()
